@@ -1,0 +1,4 @@
+# PDFSplitter rquirements
+kivy==2.0.0
+kivymd==0.104.2
+PyPDF2==1.26.0
