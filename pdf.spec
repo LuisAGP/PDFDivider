@@ -10,7 +10,7 @@ from kivymd import hooks_path as kivymd_hooks_path
 path = os.path.abspath(".")
 
 a = Analysis(
-    ["main.py"],
+    ["main2.py"],
     pathex=[path],
     hookspath=[kivymd_hooks_path],
     win_no_prefer_redirects=False,
@@ -18,9 +18,9 @@ a = Analysis(
     cipher=None,
     noarchive=False,
     datas=[ 
-        ('database.py', '.' ), 
+        # ('database.py', '.' ), 
         ('pdfsplitter.kv', '.'),
-        ('pdfsplitter.db', '.'),
+        # ('pdfsplitter.db', '.'),
     ],
 )
 pyz = PYZ(a.pure, a.zipped_data, cipher=None)
@@ -36,7 +36,7 @@ exe = EXE(
     strip=False,
     upx=True,
     name="PDFSplitter",
-    console=False,
+    console=False
 )
 
 coll = COLLECT(exe,

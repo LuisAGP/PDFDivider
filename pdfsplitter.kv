@@ -36,6 +36,14 @@ MDBoxLayout:
             pos_hint: {'center_x': .5, 'center_y': 0.5}
             on_release: app.file_manager_open() 
 
+    MDLabel:
+        id: label_pdf_path
+        size_hint_y: None
+        height: dp(22)
+        text: ""
+        color: .6,.2,.2,1
+        font_size: dp(11)
+
     Check:
         id: todo
         text: "Separar todas"
